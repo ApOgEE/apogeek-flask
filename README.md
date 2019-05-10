@@ -4,7 +4,8 @@ My idea to create this project is to make it as a template for my future flask p
 Putting this code on github means that I'm willing to share this code. You may download and edit the code for your projects.
 
 I'm using port 80. You may change the port on `docker-compose.yml` to `5000` for example like this:
-```    ports:
+```
+   ports:
       - 5000:80
 ```
 
