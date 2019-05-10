@@ -1,0 +1,22 @@
+# docker-compose.yml
+
+version: '3'
+services:
+
+  flask:
+    image: apogeek-flask
+    build:
+      context: .
+      dockerfile: Dockerfile-flask
+    volumes:
+      - "./websrc:/apogeek"
+
+  nginx:
+    image: apogeek-nginx
+    build:
+      context: .
+      dockerfile: Dockerfile-nginx
+    ports:
+      - 80:80
+    depends_on:
+      - flask

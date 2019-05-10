@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ data["tajuk"] }}</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/apogeek.css')}}">
+</head>
+<body>
+	<div class="container">
+		<h1>Welcome to {{ data["tajuk"] }}</h1>
+		<p>
+			This is an example python flask page by {{ data["apogeek"] }}
+		</p>
+		<p>
+			<ul><li><a href="/admin">test admin</a></li></ul>
+		</p>	
+	</div>
+	<script type="text/javascript" src="{{ url_for('static',filename='js/apogeek.js')}}"></script>
+</body>
+</html>
